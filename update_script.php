@@ -3,10 +3,10 @@
 include ("./connect_db.php");
 
 $id = $_POST["id"];
-$burgerservicenummer = $_POST["burgerservicenummer"];
-$email = $_POST["email"];
-$phonenumber = $_POST["phonenumber"];
-$firstname = $_POST["firstname"];
+$burgerservicenummer = $_POST["BSN"];
+$email = $_POST["e-mail"];
+$phonenumber = $_POST["Telefoonnummer"];
+$firstname = $_POST["Voornaam"];
 $infix = $_POST["infix"];
 $lastname = $_POST["lastname"];
 $password = $_POST["password"];
@@ -15,15 +15,15 @@ $date_of_birth = $_POST["date_of_birth"];
 
 
 $sql = "UPDATE `project` 
-        SET `burgerservicenummer` = '$burgerservicenummer',
-        `email` = '$email', 
-        `phonenumber` = '$phonenumber', 
-        `firstname` = '$firstname', 
-        `infix` = '$infix', 
-        `lastname` = '$lastname',
-        `password` = '$password',
-        `gander` = '$gander',
-        `date_of_birth` = '$date_of_birth'
+        SET `burgerservicenummer` = '$BSN',
+        `email` = '$Email', 
+        `phonenumber` = '$Telefoonnummer', 
+        `firstname` = '$Voornaam', 
+        `infix` = '$Tussenvoegsel', 
+        `lastname` = '$Achternaam',
+        `password` = '$Wachtwoord',
+        `gander` = '$Geslacht',
+        `date_of_birth` = '$Geboortedatum'
         WHERE `project`.`id` = $id;";
 
 // echo $sql;exit();

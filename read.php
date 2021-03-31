@@ -13,15 +13,15 @@ while ($record = mysqli_fetch_assoc($result)) {
   // var_dump($record);
   $records .= "<tr>
                 <th scope='row'>" . $record["id"] . "</th>
-                <td>" . $record["burgerservicenummer"] . "</td>
-                <td>" . $record["email"] . "</td>
-                <td>" . $record["phonenumber"] . "</td>
-                <td>" . $record["firstname"] . "</td>
-                <td>" . $record["infix"] . "</td>
-                <td>" . $record["lastname"] . "</td>
-                <td>" . $record["password"] . "</td>
-                <td>" . $record["gander"] . "</td>
-                <td>" . $record["date_of_birth"] . "</td>
+                <td>" . $record["BSN"] . "</td>
+                <td>" . $record["Email"] . "</td>
+                <td>" . $record["Telefoonnummer"] . "</td>
+                <td>" . $record["Voornaam"] . "</td>
+                <td>" . $record["Tussenvoegsel"] . "</td>
+                <td>" . $record["Achternaam"] . "</td>
+                <td>" . $record["Wachtwoord"] . "</td>
+                <td>" . $record["Geslacht"] . "</td>
+                <td>" . $record["Geboortedatum"] . "</td>
                 <td>
                   <a href='./update.php?id=" . $record["id"] . "'>
                     <img src='./img/icons/b_edit.png' alt='pencil'>
@@ -107,15 +107,15 @@ while ($record = mysqli_fetch_assoc($result)) {
     <thead>
       <tr>
         <th scope="col">Id</th>
-        <th scope="col">burgerservicenummer</th>
-        <th scope="col">e-mail</th>
-        <th scope="col">phone-number</th>
-        <th scope="col">firstname</th>
-        <th scope="col">infix</th>
-        <th scope="col">lastname</th>
-        <th scope="col">password</th>
-        <th scope="col">gender</th>
-        <th scope="col">date_of_birth</th>
+        <th scope="col">Burgerservicenummer</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Telefoonnummer</th>
+        <th scope="col">Voornaam</th>
+        <th scope="col">Tussenvoegsel</th>
+        <th scope="col">Achternaam</th>
+        <th scope="col">Wachtwoord</th>
+        <th scope="col">Geslacht</th>
+        <th scope="col">Geboortedatum</th>
         
 
         <th scope="col"></th>

@@ -159,10 +159,10 @@
         </div class="col-6">
             <form action="./creat.php" method="post">
                 <div class="form-group">
-                    <label for="burgerservicenummer">burgerservicenummer</label>
-                    <input type="text" class="form-control" id="burgerservicenummer"
+                    <label for="BSN">burgerservicenummer</label>
+                    <input type="text" class="form-control" id="BSN"
                         aria-describedby="burgerservicenummerlHelp" placeholder="Invoer burgerservicenummer"
-                        name="burgerservicenummer">
+                        name="BSN">
                 </div>
 
 
@@ -206,11 +206,11 @@
                     </div>
 
                     <div class="form-group my-1">
-                        <input type="radio" id="gander" name="gander" value="male">
+                        <input type="radio" id="gender" name="gender" value="male">
                         <label for="male">Male</label><br>
-                        <input type="radio" id="gander" name="gander" value="female">
+                        <input type="radio" id="gender" name="gender" value="female">
                         <label for="female">Female</label><br>
-                        <input type="radio" id="gander" name="gander" value="other">
+                        <input type="radio" id="gender" name="gender" value="other">
                         <label for="other">Other</label>
                     </div>
 

@@ -51,10 +51,10 @@
     </div class="col-6">
     <form action="./update_script.php" method="post">
         <div class="form-group">
-            <label for="burgerservicenummer">burgerservicenummer</label>
-            <input type="text" class="form-control" id="burgerservicenummer" aria-describedby="burgerservicenummerHelp"
-                placeholder="Invoer burgerservicenummer" name="burgerservicenummer"
-                value="<?php echo $record["burgerservicenummer"]; ?>">
+            <label for="BSN">Burgerservicenummer</label>
+            <input type="text" class="form-control" id="BSN" aria-describedby="BurgerservicenummerHelp"
+                placeholder="Invoer BSN" name="BSN"
+                value="<?php echo $record["BSN"]; ?>">
         </div>
 
 
@@ -62,18 +62,18 @@
         </div class="col-6">
 
         <div class="form-group">
-            <label for="email">email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emaillHelp" placeholder="Invoer email"
-                name="email" value="<?php echo $record["email"]; ?>">
+            <label for="email">E-mail</label>
+            <input type="Email" class="form-control" id="Email" aria-describedby="EmaillHelp" placeholder="Invoer e-mail"
+                name="Email" value="<?php echo $record["Email"]; ?>">
         </div>
 
         <div class="row">
         </div class="col-6">
 
         <div class="form-group">
-            <label for="phonenumber">phonenumber</label>
-            <input type="text" class="form-control" id="phonenumber" aria-describedby="phonenumberHelp"
-                placeholder="Invoer phonenumber" name="phonenumber" value="<?php echo $record["phonenumber"]; ?>">
+            <label for="Telefoonnummer">Telefoonnummer</label>
+            <input type="text" class="form-control" id="Telefoonnummer" aria-describedby="TelefoonnummerHelp"
+                placeholder="Invoer Telefoonnummer" name="Telefoonnummer" value="<?php echo $record["Telefoonnummer"]; ?>">
         </div>
         <div class="row">
         </div class="col-6">
@@ -101,18 +101,18 @@
             </div>
         </div>
         <div class="form-group">
-            <input type="radio" id="gander" name="gander" value="male" <?php if ($record["gander"] == 'male') { echo 'checked'; } ?>>
+            <input type="radio" id="gender" name="gender" value="male" <?php if ($record["gender"] == 'male') { echo 'checked'; } ?>>
             <label for="male">Male</label>
-            <input type="radio" id="gander" name="gander" value="female" <?php if ($record["gander"] == 'female') { echo 'checked'; } ?>>
+            <input type="radio" id="gender" name="gender" value="female" <?php if ($record["gender"] == 'female') { echo 'checked'; } ?>>
             <label for="female">Female</label>
-            <input type="radio" id="gander" name="gander" value="other" <?php if ($record["gander"] == 'other') { echo 'checked'; } ?>>
+            <input type="radio" id="gender" name="gender" value="other" <?php if ($record["gender"] == 'other') { echo 'checked'; } ?>>
             <label for="other">Other</label>
         </div>
 
 
         <div class="form-group">
             <label for="other"></label>
-            <input type="date" id="brith" name="date_of_birth" value="<?php echo $record["date_of_birth"]; ?>">
+            <input type="date" id="birth" name="date_of_birth" value="<?php echo $record["date_of_birth"]; ?>">
         </div>
 
         

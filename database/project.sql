@@ -30,15 +30,15 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `project`;
 CREATE TABLE IF NOT EXISTS `project` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `burgerservicenummer` varchar(100) NOT NULL,
-  `e-mail` varchar(100) NOT NULL,
-  `phone-number` varchar(100) NOT NULL,
-  `firstname` varchar(100) NOT NULL,
-  `infix` varchar(100) NOT NULL,
-  `lastname` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `gander` varchar(100) NOT NULL,
-  `date_of_birth` varchar(100) NOT NULL,
+  `BSN` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Telefoonnummer` varchar(100) NOT NULL,
+  `Voornaam` varchar(100) NOT NULL,
+  `Tusenvoegsel` varchar(100) NOT NULL,
+  `Acheternaam` varchar(100) NOT NULL,
+  `Wachtwoord` varchar(100) NOT NULL,
+  `Geslacht` varchar(100) NOT NULL,
+  `Geboortedatum` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
