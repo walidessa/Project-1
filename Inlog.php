@@ -1,24 +1,16 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="inlog.Css">
+<!------ Include the above in your HEAD tag ---------->
 
 <!--Favicon-->
-        <link rel="shortcut icon" href="./img/basketball_GIF.gif" type="image/x-icon">
+<link rel="shortcut icon" href="./img/basketball_GIF.gif" type="image/x-icon">
 
-        <title>De basketbal opleiding - De opleiding waar jij jezelf kan zijn!</title>
+<title>De basketbal opleiding - De opleiding waar jij jezelf kan zijn!</title>
 
-    </head>
-    <body>
-        
 <!--Begin of the navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pl-0 w-100 sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pl-0 w-100 sticky-top">
             <a class="navbar-brand" href="#"></a>
             <img src="./img/basketball_GIF.gif" width="35" height="35" alt="" loading="lazy">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,82 +41,35 @@
               </nav> 
 
 <!--End of the navbar-->
-                    
-
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="http://www.project-q-m.com/mbo.html">Basketbal</a>
-                    <a class="dropdown-item" href="http://www.project-q-m.com/aanmeld.php">aanmeld</a>
-                    <div class="dropdown-divider"></div>
-                </div> 
-            </li> -->
-
-            <!-- Dit is tijdelijk gecomantareert -->
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li> -->
 
 
-<!-- Begin of the cards -->
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
-    <div class= "container">
-      <div class="alert alert-dark text-light text-center" role="alert">
-        <h2>Welkom bij de basketbal opleiding, de opleiding waar jij jezelf kan zijn!</h2>
-      </div>
-
-      <img src="./img/basketbal.jpg" alt="Personal trainer" class="img-fluid p-2 mx-auto w-100">
-    
-      <div>
-      <div class="container mt-3">
-      <div class="row">
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4" id="Schouders">
-            <div class="card">
-              <img src="./img/Game.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-black">Speel hier de game</h5>
-                <p class="card-text">Speel hier de game</p>
-                <a href="https://www.mboutrecht.nl/opleidingen/" class="btn btn-outline-dark">Klik hier</a>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4" id="Schouders">
-            <div class="card">
-              <img src="./img/Informatie over de opleiding2.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-black">Informatie over de opleiding</h5>
-                <p class="card-text">Zoek jij een opleiding die bij je past, ben jij fanatiek en enthousiast? Klik dan hier voor informatie over de opleiding</p>
-                <a href="./page.html" class="btn btn-outline-dark">Informatie</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4" id="Schouders">
-            <div class="card">
-              <img src="./img/Geel Basketbal Playoffs Aftellen Instagram Verhaal.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-black">Schrijf je in voor de opleiding!</h5>
-                <p class="card-text">Ben jij een fanatiek, enthousiast persoon? Vind jij basketballen leuk? Meld je dan aan voor de Basketbal opleiding</p>
-                <a href="./aanmeld.php" class="btn btn-outline-dark">Aanmelden</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Icon -->
+    <div class="fadeIn first">
+    <img src="./img/basketball_GIF.gif" width="150" height="150" alt="" loading="lazy">
     </div>
-  </div>
 
-<!-- End of the cards -->
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mailadres">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Wachtwoord">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Wachtwoord vergeten -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Wachtwoord vergeten?</a>
+    </div>
+
+  </div>
+</div>
 
 <!--Begin of the footer -->
 
-<footer class="page-footer font-small unique-color-dark">
+<footer class="page-footer font-small unique-color-dark fixed-bottom">
 
   <div style="background-color: #656565;">
     <div class="container">
@@ -286,11 +231,3 @@
 
 </footer>
 <!--End of the footer-->
-
-    <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html>

@@ -10,7 +10,11 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="shortcut icon" href="./img/icon dark.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <title>Basketball</title>
+
+<!--Favicon-->
+    <link rel="shortcut icon" href="./img/basketball_GIF.gif" type="image/x-icon">
+
+    <title>De basketbal opleiding - De opleiding waar jij jezelf kan zijn!</title>
 
 </head>
 <body>
@@ -18,9 +22,10 @@
     <!-- Dit is collapse -->
     <!-- <i class="bi bi-shop" style="font-size: 2rem; color: cornflowerblue;"></i> -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pl-0 w-100">
+<!--Begin of the navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pl-0 w-100 sticky-top">
             <a class="navbar-brand" href="#"></a>
-            <img src="./img/basketball_GIF.gif" width="30" height="30" alt="" loading="lazy">
+            <img src="./img/basketball_GIF.gif" width="35" height="35" alt="" loading="lazy">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="http://www.project-q-m.com/#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.mboutrecht.nl/opleidingen/">Opleidingen</a>
@@ -36,35 +41,46 @@
 
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="http://www.project-q-m.com/aanmeld.php">Registreer</a>
+                          <a class="nav-link" href="./aanmeld.php">Inschrijven</a>
                       </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="http://www.project-q-m.com/aanmeld.php">Inloggen</a>
+                          <a class="nav-link" href="./Inlog.php">Inloggen</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./contact.php">Contact</a>
+                      </li>
                       </ul>
                   </div>
               </nav> 
 
+<!--End of the navbar-->
+
+
+<!--Begin of the jumbotron -->
     </div>
     <main class="container">
         <div class="row">
             <div class="col-12">
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
-                        <h2 class="display-4">Welkom bij basketbal aanmeld page</h2>
-                        <p class="lead">Vul uw gegevens in!</p>
+                        <h2 class="display-4">Welkom bij de inschrijfpagina voor de opleiding</h2>
+                        <p class="lead">Vul je gegevens in!</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <form class="dropdown-menu p-4">
+<!-- End of the Jumbotron -->
+
+
+<!-- Begin of the form -->
+    <form class="dropdown-menu p-4">
   <div class="form-group">
-    <label for="exampleDropdownFormEmail2">Email address</label>
+    <label for="exampleDropdownFormEmail2">E-mail</label>
     <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
   </div>
   <div class="form-group">
-    <label for="exampleDropdownFormPassword2">Password</label>
+    <label for="exampleDropdownFormPassword2">Wachtwoord</label>
     <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
   </div>
   <div class="form-group">
@@ -80,158 +96,292 @@
 
 
 <form>
-
-
-    <div class="form-row">
-        <div class="col">
-        <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-        <input type="text" class="form-control" placeholder="Last name">
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="form-group col-md-6">
-        <label for="inputEmail4">email</label>
-        <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="form-group col-md-6">
-        <label for="inputPassword4">password</label>
-        <input type="password" class="form-control" id="inputPassword4">
-        </div>
-    </div>
-
-    <div class="form-row align-items-center">
-        <div class="col-auto my-1">
-            <label class="mr-sm-3 sr-only" for="inlineFormCustomSelect">Preference</label>
-                <select class="custom-select mr-sm-5" id="inlineFormCustomSelect">
-                <option selected>Choose...</option>
-                <option value="1">Man</option>
-                <option value="2">Woman</option>
-                <option value="3">Other</option>
-            </select>
-        </div>
-    </div>
-
-    <input type="date" id="brith" name="date_of_birth">
-
     
     <div class="form-group">
-        <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="form-group">
-        <label for="inputAddress2">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        <label for="inputAddress">Adres:</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="">
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
-        <label for="inputCity">city</label>
-        <input type="text" class="form-control" id="inputCity">
+        <label for="inputCity">Stad:</label>
+        <input type="text" class="form-control" id="inputCity" placeholder="Bijv. Utrecht">
         </div>
         <div class="form-group col-md-4">
-        <label for="inputState">state</label>
+        <label for="inputState">Provincie:</label>
         <select id="inputState" class="form-control">
-            <option selected>Choose...</option>
-            <option>...</option>
+            <option selected>Kies een provincie...</option>
+            <option>Groningen</option>
+            <option>Friesland (Fryslân)</option>
+            <option>Drenthe</option>
+            <option>Overijssel</option>
+            <option>Flevoland</option>
+            <option>Gelderland</option>
+            <option>Utrecht</option>
+            <option>Noord-Holland</option>
+            <option>Zuid-Holland</option>
+            <option>Zeeland</option>
+            <option>Noord-Brabant</option>
+            <option>Limburg</option>
         </select>
         </div>
         <div class="form-group col-md-2">
-        <label for="inputZip">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
+        <label for="inputZip">Postcode:</label>
+        <input type="text" class="form-control" id="inputZip" placeholder="1234 AB">
         </div>
     </div>
-    <div class="form-group">
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-            Check me out
-        </label>
-        </div>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
+<!-- End of the form -->
 
 
+<!-- Begin of the form -->
         <div class="row">
         </div class="col-6">
             <form action="./creat.php" method="post">
                 <div class="form-group">
-                    <label for="BSN">burgerservicenummer</label>
+                    <label for="BSN">Burgerservicenummer:</label>
                     <input type="text" class="form-control" id="BSN"
-                        aria-describedby="burgerservicenummerlHelp" placeholder="Invoer burgerservicenummer"
+                        aria-describedby="burgerservicenummerlHelp" placeholder="Burgerservicenummer"
                         name="BSN">
                 </div>
 
-
                 </div>
                 <div class="form-group">
-                    <label for="email">email</label>
+                    <label for="email">E-mail:</label>
                     <input type="text" class="form-control" id="e-mail" aria-describedby="emailHelp"
-                        placeholder="Invoer email" name="email">
+                        placeholder="E-mailadres" name="email">
 
                     <div class="row">
                     </div class="col-6">
 
                     <div class="form-group">
-                        <label for="phonenumber">phone-number</label>
+                        <label for="phonenumber">Telefoonnummer:</label>
                         <input type="text" class="form-control" id="phonenumber" aria-describedby="phonenumberHelp"
-                            placeholder="Invoer phonenumber" name="phonenumber">
+                            placeholder="+31 6 1234567" name="phonenumber">
                     </div>
 
                     <div class="row">
                     </div class="col-6">
                     <div class="form-group">
-                        <label for="firstname">firstname</label>
+                        <label for="firstname">Voornaam:</label>
                         <input type="text" class="form-control" id="firstname" aria-describedby="firstlHelp"
-                            placeholder="Invoer voornaam" name="firstname">
+                            placeholder="Jan" name="firstname">
                     </div>
                     <div class="form-group">
-                        <label for="infix">infix</label>
+                        <label for="infix">Tussenvoegsel:</label>
                         <input type="text" class="form-control" id="infix" aria-describedby="infixlHelp"
-                            placeholder="Invoer tussenvoegsel" name="infix">
+                            placeholder="van" name="infix">
                     </div>
                     <div class="form-group">
-                        <label for="lastname">Lastname</label>
+                        <label for="lastname">Achternaam:</label>
                         <input type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp"
-                            placeholder="Invoer achternaam" name="lastname">
+                            placeholder="Zuijlen" name="lastname">
 
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password">Wachtwoord:</label>
                         <input type="password" class="form-control" id="password" aria-describedby="password"
-                            placeholder="Invoer password" name="password">
+                            placeholder="Voer een sterk wachtwoord in" name="password">
                     </div>
 
                     <div class="form-group my-1">
-                        <input type="radio" id="gender" name="gender" value="male">
-                        <label for="male">Male</label><br>
-                        <input type="radio" id="gender" name="gender" value="female">
-                        <label for="female">Female</label><br>
-                        <input type="radio" id="gender" name="gender" value="other">
-                        <label for="other">Other</label>
+                        <input type="radio" id="gender" name="gender" value="Man">
+                        <label for="male">Man</label><br>
+                        <input type="radio" id="gender" name="gender" value="Vrouw">
+                        <label for="female">Vrouw</label><br>
+                        <input type="radio" id="gender" name="gender" value="Anders">
+                        <label for="other">Anders</label>
                     </div>
 
                     <input type="date" id="brith" name="date_of_birth">
-
-                    
 
                     <!-- <div class="row">
                         </div class="col-12">
                     </div>
                     </div> -->
-                    <p>Wij zulluen uw gegevens nooit delen met derde!</p>
+                    <p>Wij zullen uw gegevens nooit delen met derde!</p>
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I agree with the condition</label><br>
-                    <button type="submit" class="btn btn-dark">Versturen</button> 
+                    <label for="vehicle1"> Ik ga akkoord met de voorwaarden</label><br>
+                    <button type="submit" class="btn btn-outline-dark">Versturen</button> 
 
             </form>
+
+
         </div>
         </div class="col-6">
         </div>
+
+    <!-- End of the form -->
+
+    <!--Begin of the footer-->
+
+<footer class="page-footer font-small unique-color-dark">
+
+<div style="background-color: #656565;">
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row py-4 d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+        <h6 class="mb-0">De opleiding waar jij jezelf kan zijn!</h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+        <!-- Facebook -->
+        <a class="fb-ic">
+          <i class="fab fa-facebook-f white-text mr-4"> </i>
+        </a>
+        <!-- Twitter -->
+        <a class="tw-ic">
+          <i class="fab fa-twitter white-text mr-4"> </i>
+        </a>
+        <!-- Google +-->
+        <a class="gplus-ic">
+          <i class="fab fa-google-plus-g white-text mr-4"> </i>
+        </a>
+        <!--Linkedin -->
+        <a class="li-ic">
+          <i class="fab fa-linkedin-in white-text mr-4"> </i>
+        </a>
+        <!--Instagram-->
+        <a class="ins-ic">
+          <i class="fab fa-instagram white-text"> </i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+</div>
+
+<!-- Footer Links -->
+<div class="container text-center text-md-left mt-5">
+
+  <!-- Grid row -->
+  <div class="row mt-3">
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+      <!-- Content -->
+      <h6 class="text-uppercase font-weight-bold">BASKETBALL ACADEMY</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+        consectetur
+        adipisicing elit.</p>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Onze school</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <a href="./page.html">Informatie studenten</a>
+      </p>
+      <p>
+        <a href="./aanmeld.php">Inschrijven voor de opleiding</a>
+      </p>
+      <p>
+        <a href="#!">Speel de Game</a>
+      </p>
+      <p>
+        <a href="https://www.mboutrecht.nl/opendag/">Open dagen</a>
+      </p>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Studenten</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <a href="#!">Inloggen Office 365</a>
+      </p>
+      <p>
+        <a href="#!">Rooster</a>
+      </p>
+      <p>
+        <a href="#!">Nieuwsbrief</a>
+      </p>
+      <p>
+        <a href="#!">Vakantierooster</a>
+      </p>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Praktisch</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <a href="#!">Ziekmelden</a>
+      </p>
+      <p>
+        <a href="#!">Schoolkosten en DUO</a>
+      </p>
+      <p>
+        <a href="#!">Locaties</a>
+      </p>
+      <p>
+        <a href="#!">Informatie voor ouders</a>
+      </p>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Contactgevens</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <i class="fas fa-home mr-3"></i>Nieuw Houtenseweg 120, 3672 GB, Utrecht</p>
+      <p>
+        <i class="fas fa-envelope mr-3"></i>info@basketbalacademy.nl</p>
+      <p>
+        <i class="fas fa-phone mr-3"></i>030-28893748</p>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© Copyright 2021 BASKETBALL ACADEMY - De school waar jij kan ontplooien - Powered by SD1A2 - Lightspeed design by SD1A2
+  <a href="https://Basketbalopleiding.nl"> Basketbalopleiding.nl</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<!--End of the footer-->
+
+
     </main>
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -248,6 +398,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
     <script scr="./js/app.js"></script>
-</body>
 
+</body>
 </html>

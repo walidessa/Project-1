@@ -10,7 +10,7 @@ $firstname = $_POST["Voornaam"];
 $infix = $_POST["infix"];
 $lastname = $_POST["lastname"];
 $password = $_POST["password"];
-$gander = $_POST["gander"];
+$gender = $_POST["gender"];
 $date_of_birth = $_POST["date_of_birth"];
 
 

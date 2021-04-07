@@ -28,9 +28,48 @@
 
     <div class="container">
         <div class="alert text-dark text-center p-2 border-" role="alert">
-            <h1>Basketball</h1>
+            <h1>Basketbal</h1>
         </div>
-        <title>Basketball</title>
+
+ <!--Favicon-->
+        <link rel="shortcut icon" href="./img/basketball_GIF.gif" type="image/x-icon">
+
+        <title>De basketbal opleiding - De opleiding waar jij jezelf kan zijn!</title>
+
+<!--Begin of the navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pl-0 w-100 sticky-top">
+            <a class="navbar-brand" href="#"></a>
+            <img src="./img/basketball_GIF.gif" width="35" height="35" alt="" loading="lazy">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mboutrecht.nl/opleidingen/">Opleidingen</a>
+                    </li>
+
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="./aanmeld.php">Inschrijven</a>
+                      </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./Inlog.php">Inloggen</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./contact.php">Contact</a>
+                      </li>
+                      </ul>
+                  </div>
+              </nav> 
+
+<!--End of the navbar-->
+
+
 </head>
 </body>
 
@@ -40,7 +79,7 @@
         <div class="col-12">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h2 class="display-4">Basketball</h2>
+                    <h2 class="display-4">Basketbal</h2>
                     <p class="lead">text</p>
                 </div>
             </div>
