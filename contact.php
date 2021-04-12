@@ -59,13 +59,19 @@
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="fname">Voornaam:</label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="fname" placeholder="Voer je Voornaam in" name="fname">
+					<input type="text" class="form-control" id="Voornaam" placeholder="Voer je Voornaam in" name="Voornaam">
 				  </div>
 				</div>
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="lname">Achternaam:</label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="lname" placeholder="Voer je Achternaam in" name="lname">
+					<input type="text" class="form-control" id="Achternaam" placeholder="Voer je Achternaam in" name="Achternaam">
+				  </div>
+				</div>
+        <div class="form-group">
+				  <label class="control-label col-sm-2" for="lname">Studentenummer:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="Studentennummer" placeholder="Voer je Studentennummer in" name="Studentennummer">
 				  </div>
 				</div>
 				<div class="form-group">
@@ -75,6 +81,7 @@
 				  </div>
 				</div>
 				<div class="form-group">
+        <div class="col-sm-10 ">
                 <label class="control-label col-sm-2" for="comment"></label>
                 <select id="inputcomment" class="form-control">
                 <option selected>Kies een optie...</option>
@@ -82,7 +89,6 @@
                 <option>Vraag</option>
                 <option>Opmerking</option>
                 <option>Iets anders</option>
-				  <div class="col-sm-10 ">
 					<textarea class="form-control" rows="5" id="comment"></textarea>
 				  </div>
 				</div>
