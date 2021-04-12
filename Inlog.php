@@ -1,13 +1,22 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="inlog.Css">
-<!------ Include the above in your HEAD tag ---------->
 
-<!--Favicon-->
-<link rel="shortcut icon" href="./img/basketball_GIF.gif" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/inlog.css">
+</head>
 
 <title>De basketbal opleiding - De opleiding waar jij jezelf kan zijn!</title>
+
+ <!--Favicon-->
+ <link rel="shortcut icon" href="./img/basketball_GIF.gif" type="image/x-icon">
+
+
+<body>
 
 <!--Begin of the navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pl-0 w-100 sticky-top">
@@ -42,192 +51,47 @@
 
 <!--End of the navbar-->
 
-
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Tabs Titles -->
-
-    <!-- Icon -->
-    <div class="fadeIn first">
-    <img src="./img/basketball_GIF.gif" width="150" height="150" alt="" loading="lazy">
-    </div>
-
-    <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mailadres">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Wachtwoord">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
-
-    <!-- Wachtwoord vergeten -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Wachtwoord vergeten?</a>
-    </div>
-
-  </div>
-</div>
-
-<!--Begin of the footer -->
-
-<footer class="page-footer font-small unique-color-dark fixed-bottom">
-
-  <div style="background-color: #656565;">
+<!--Begin of the inlog form -->
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
     <div class="container">
-
-      <!-- Grid row-->
-      <div class="row py-4 d-flex align-items-center">
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">De opleiding waar jij jezelf kan zijn!</h6>
+      <div class="card login-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="./img/loginpage2" alt="login" class="login-card-img">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <div class="brand-wrapper">
+                <img src="./img/basketball_GIF.gif" alt="logo" class="logo">
+              </div>
+              <p class="login-card-description">Inloggen </p>
+              <form action="#!">
+                  <div class="form-group">
+                    <label for="email" class="sr-only">E-mail:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="123456@basketballacademy.nl">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="password" class="sr-only">Wachtwoord:</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Wachtwoord">
+                  </div>
+                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+                </form>
+                <a href="#!" class="forgot-password-link">Forgot password?</a>
+                <p class="login-card-footer-text">Nog geen leerling? <a href="./aanmeld.php" class="text-reset">Klik hier om te registreren</a></p>
+                <nav class="login-card-footer-nav">
+                </nav>
+            </div>
+          </div>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-7 text-center text-md-right">
-
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f white-text mr-4"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter white-text mr-4"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g white-text mr-4"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in white-text mr-4"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram white-text"> </i>
-          </a>
-
-        </div>
-        <!-- Grid column -->
-
       </div>
-      <!-- Grid row-->
 
     </div>
-  </div>
+  </main>
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left mt-5">
+  <!--End of the inlog form -->
 
-    <!-- Grid row -->
-    <div class="row mt-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-        <!-- Content -->
-        <h6 class="text-uppercase font-weight-bold">BASKETBALL ACADEMY</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-          consectetur
-          adipisicing elit.</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Onze school</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="./page.html">Informatie studenten</a>
-        </p>
-        <p>
-          <a href="./aanmeld.php">Inschrijven voor de opleiding</a>
-        </p>
-        <p>
-          <a href="#!">Speel de Game</a>
-        </p>
-        <p>
-          <a href="https://www.mboutrecht.nl/opendag/">Open dagen</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Studenten</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="https://start.mboutrecht.nl/">Inloggen Office 365</a>
-        </p>
-        <p>
-          <a href="#!">Rooster</a>
-        </p>
-        <p>
-          <a href="#!">Nieuwsbrief</a>
-        </p>
-        <p>
-          <a href="#!">Vakantierooster</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Praktisch</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">Ziekmelden</a>
-        </p>
-        <p>
-          <a href="#!">Schoolkosten en DUO</a>
-        </p>
-        <p>
-          <a href="#!">Locaties</a>
-        </p>
-        <p>
-          <a href="#!">Informatie voor ouders</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contactgevens</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <i class="fas fa-home mr-3"></i>Nieuw Houtenseweg 120, 3672 GB, Utrecht</p>
-        <p>
-          <i class="fas fa-envelope mr-3"></i>info@basketbalacademy.nl</p>
-        <p>
-          <i class="fas fa-phone mr-3"></i>030-28893748</p>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© Copyright 2021 BASKETBALL ACADEMY - De school waar jij kan ontplooien - Powered by SD1A2 - Lightspeed design by SD1A2
-    <a href="https://Basketbalopleiding.nl"> Basketbalopleiding.nl</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!--End of the footer-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
