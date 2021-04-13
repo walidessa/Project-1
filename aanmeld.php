@@ -293,7 +293,7 @@
         <a href="./aanmeld.php">Inschrijven voor de opleiding</a>
       </p>
       <p>
-        <a href="#!">Speel de Game</a>
+        <a href="">Speel de Game</a>
       </p>
       <p>
         <a href="https://www.mboutrecht.nl/opendag/">Open dagen</a>
