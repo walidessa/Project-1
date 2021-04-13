@@ -11,7 +11,7 @@ $tussenvoegsel = $_POST["tussenvoegsel"];
 $achternaam = $_POST["achternaam"];
 $wachtwoord = $_POST["wachtwoord"];
 $geslacht = $_POST["geslacht"];
-$date_of_birth = $_POST["date_of_birth"];
+$geboortedatum = $_POST["geboortedatum"];
 
 
 $sql = "UPDATE `project` 
@@ -23,7 +23,7 @@ $sql = "UPDATE `project`
         `achternaam` = '$achternaam',
         `wachtwoord` = '$wachtwoord',
         `gender` = '$geslacht',
-        `date_of_birth` = '$geboortedatum'
+        `geboortedatum` = '$geboortedatum'
         WHERE `project`.`id` = $id;";
 
 // echo $sql;exit();
